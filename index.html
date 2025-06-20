@@ -10,38 +10,40 @@
   <body class="bg-white text-gray-900 font-sans">
 
     <!-- Hero -->
-    <header class="relative bg-gray-900 text-white">
-      <img src="https://source.unsplash.com/1600x600/?car,detailing" alt="Car Detailing" class="w-full h-72 object-cover opacity-50">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 class="text-4xl font-bold mb-2 drop-shadow">A2B Detailing</h1>
-        <p class="text-lg text-gray-200 max-w-xl drop-shadow">Professional mobile car cleaning & detailing in Louth and nearby areas.</p>
+    <header class="bg-gray-900 text-white">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+          <img src="A_logo_design_for_a_company_named_\"A2B_Detailing\"_.png" alt="A2B Detailing Logo" class="w-16 h-16">
+          <div>
+            <h1 class="text-2xl font-bold">A2B Detailing</h1>
+            <p class="text-sm text-gray-300">Mobile car detailing in Louth & nearby areas</p>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- Booking -->
-    <main class="max-w-2xl mx-auto py-16 px-4 text-center">
-      <h2 class="text-2xl font-semibold mb-4">Book Your Appointment</h2>
-      <p class="text-gray-600 mb-8">Simple, flexible online booking. We’ll confirm your slot once received.</p>
+    <!-- Service Section -->
+    <main class="max-w-4xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-semibold mb-2 text-center">60 Minute Maintenance Wash</h2>
+      <p class="text-center text-gray-600 mb-6">Our quick but thorough wash – perfect for keeping your car fresh between full valets.</p>
 
-      <div class="tidycal-embed" data-path="kieronboz"></div>
-      <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+      <div class="flex justify-center mb-8">
+        <img src="https://source.unsplash.com/800x400/?carwash,detail" alt="Service Image" class="rounded shadow">
+      </div>
+
+      <iframe 
+        src="https://tidycal.com/kieronboz/15-minute-meeting"
+        width="100%" 
+        height="600" 
+        frameborder="0" 
+        allowfullscreen
+        class="rounded shadow"
+      ></iframe>
     </main>
 
-    <!-- Gallery -->
-    <section class="bg-gray-50 py-12">
-      <div class="max-w-5xl mx-auto px-4">
-        <h3 class="text-2xl font-semibold text-center mb-8">Our Work</h3>
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <img src="https://source.unsplash.com/400x300/?car,clean" class="rounded-lg shadow-md" alt="Clean Car 1">
-          <img src="https://source.unsplash.com/400x300/?car,interior" class="rounded-lg shadow-md" alt="Clean Car 2">
-          <img src="https://source.unsplash.com/400x300/?car,detailing,shine" class="rounded-lg shadow-md" alt="Clean Car 3">
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-gray-100 py-6 mt-12 text-center text-sm text-gray-500">
-      &copy; 2025 A2B Detailing. Mobile car detailing service in Louth, UK.
+    <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+      &copy; 2025 A2B Detailing. All rights reserved.
     </footer>
 
   </body>
