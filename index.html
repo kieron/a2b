@@ -3,107 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2B Detailing | Shine On in Louth</title>
+    <title>A2B Detailing | Car Detailing in Louth</title>
+    <meta
+      name="description"
+      content="Louth-based car detailing service offering professional cleans with a personal touch."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: "#000000",
-              accent: "#FFC107",
-              bgDark: "#111111",
-              textLight: "#f0f0f0"
-            },
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"]
-            }
-          }
-        }
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="description" content="A2B Detailing – high-quality car detailing service in Louth. Book online, get that showroom shine.">
     <style>
-      #site-content { display: none; }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Bebas Neue", cursive;
+      }
+      #site-content {
+        display: none;
+      }
     </style>
+
+    <!-- Basic Password Protection -->
     <script>
       window.addEventListener("DOMContentLoaded", () => {
-        const pass = prompt("Password to view A2B Detailing:");
+        const pass = prompt("Enter password to view this site:");
         if (pass === "444") {
           document.getElementById("site-content").style.display = "block";
         } else {
           document.body.innerHTML =
-            "<div class='flex items-center justify-center h-screen font-poppins text-xl text-white bg-black'>Access Denied</div>";
+            "<div style='text-align:center;margin-top:20vh;font-family:sans-serif;'>Access Denied</div>";
         }
       });
     </script>
   </head>
-
-  <body class="font-poppins bg-bgDark text-textLight">
+  <body class="bg-neutral-900 text-gray-100">
     <div id="site-content">
-
-      <!-- Text Logo Header -->
-      <header class="bg-brand text-white py-6 shadow-lg">
-        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-          <div class="text-3xl font-extrabold tracking-wide text-accent">
-            <span class="text-white">A2B</span> <span class="text-accent">Detailing</span>
+      <!-- Header with HTML-only logo -->
+      <header class="bg-black text-yellow-400 py-4 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 flex items-center space-x-4">
+          <div>
+            <h1 class="text-3xl tracking-wide leading-tight">A2B Detailing</h1>
+            <p class="text-sm text-yellow-300">
+              Car detailing specialists based in Louth, Lincolnshire
+            </p>
           </div>
-          <p class="hidden sm:block text-sm text-gray-400">Louth, Lincolnshire</p>
         </div>
       </header>
 
-      <!-- Hero -->
-      <section class="relative">
-        <img
-          src="https://picsum.photos/1600/600?car-detail"
-          alt="Hero Image"
-          class="w-full h-72 object-cover brightness-50"
-        />
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 class="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg">Showroom Shine, Every Time</h1>
-          <p class="mt-4 text-lg text-accent drop-shadow">Serving Louth with premium detailing packages.</p>
-        </div>
-      </section>
-
       <!-- Booking -->
-      <main class="max-w-2xl mx-auto py-16 px-4 text-center">
-        <h2 class="text-2xl font-semibold mb-4 text-white">Book Your Appointment</h2>
-        <p class="text-gray-400 mb-8">Choose a package and we’ll confirm your slot via message or email.</p>
+      <main class="max-w-4xl mx-auto py-16 px-4 text-center">
+        <h2 class="text-3xl text-yellow-400 mb-2">Book Your Clean</h2>
+        <p class="text-gray-300 mb-6">
+          Professional service, fair prices, and the kind of shine that turns
+          heads.
+        </p>
 
         <div class="tidycal-embed" data-path="kieronboz"></div>
-        <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+        <script
+          src="https://asset-tidycal.b-cdn.net/js/embed.js"
+          async
+        ></script>
       </main>
 
       <!-- Gallery -->
-      <section class="bg-[#1a1a1a] py-12">
+      <section class="bg-neutral-800 py-12">
         <div class="max-w-5xl mx-auto px-4">
-          <h3 class="text-2xl font-semibold text-center mb-8 text-white">Our Work</h3>
+          <h3 class="text-2xl text-center mb-8 text-yellow-400">
+            Some of Our Recent Work
+          </h3>
           <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <img src="https://picsum.photos/400/300?grayscale&1" class="rounded-lg shadow-lg" alt="Detail 1">
-            <img src="https://picsum.photos/400/300?grayscale&2" class="rounded-lg shadow-lg" alt="Detail 2">
-            <img src="https://picsum.photos/400/300?grayscale&3" class="rounded-lg shadow-lg" alt="Detail 3">
+            <img
+              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=600&q=80"
+              class="rounded-lg shadow-md"
+              alt="Clean Car 1"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=600&q=80"
+              class="rounded-lg shadow-md"
+              alt="Clean Car 2"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=600&q=80"
+              class="rounded-lg shadow-md"
+              alt="Clean Car 3"
+            />
           </div>
-        </div>
-      </section>
-
-      <!-- Contact / Location -->
-      <section class="py-12 text-center">
-        <div class="max-w-2xl mx-auto">
-          <h4 class="text-xl font-semibold mb-2 text-white">Find Us in Louth</h4>
-          <p class="text-gray-400 mb-1">123 High Street, Louth, LN11 9AB</p>
-          <p class="text-gray-400">Call/Text: 07700 900 123</p>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="bg-black py-6 text-center text-sm text-gray-500">
-        &copy; 2025 A2B Detailing. All rights reserved.
+      <footer class="bg-black text-yellow-400 py-8 text-center text-sm">
+        <p class="mb-2">A2B Detailing, 23 Church Street, Louth, LN11 9BX</p>
+        <p>
+          Call or text:
+          <a href="tel:+447123456789" class="underline">07123 456789</a>
+        </p>
+        <p class="mt-4 text-yellow-600">
+          &copy; 2025 A2B Detailing. Keep it clean.
+        </p>
       </footer>
-
     </div>
+
+    <script>
+      // Wait for TidyCal to load, then remove their branding footer
+      const hideTidyCalBranding = () => {
+        const footer = document.getElementById("powered_by_footer");
+        if (footer) {
+          footer.remove();
+        } else {
+          setTimeout(hideTidyCalBranding, 200); // Try again after 200ms
+        }
+      };
+
+      window.addEventListener("load", () => {
+        setTimeout(hideTidyCalBranding, 1000); // Delay to let embed load
+      });
+    </script>
   </body>
 </html>
