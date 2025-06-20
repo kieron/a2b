@@ -6,45 +6,61 @@
     <title>A2B Detailing | Mobile Car Cleaning in Louth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="description" content="Mobile car detailing service in Louth and surrounding areas. Book online with A2B Detailing.">
+    <style>
+      #site-content { display: none; }
+    </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const pass = prompt("Enter password to view this site:");
+        if (pass === "444") {
+          document.getElementById("site-content").style.display = "block";
+        } else {
+          document.body.innerHTML = "<div style='text-align:center;margin-top:20vh;font-family:sans-serif;'>Access Denied</div>";
+        }
+      });
+    </script>
   </head>
+
   <body class="bg-white text-gray-900 font-sans">
+    <div id="site-content">
 
-    <!-- Header with logo -->
-    <header class="bg-gray-900 text-white py-4">
-      <div class="max-w-6xl mx-auto px-4 flex items-center space-x-4">
-        <img src="logo.png" alt="A2B Detailing Logo" class="h-12 w-auto" />
-        <div>
-          <h1 class="text-2xl font-bold">A2B Detailing</h1>
-          <p class="text-sm text-gray-300">Mobile car detailing in Louth & nearby areas</p>
+      <!-- Header -->
+      <header class="bg-gray-900 text-white py-4">
+        <div class="max-w-6xl mx-auto px-4 flex items-center space-x-4">
+          <img src="logo.png" alt="A2B Detailing Logo" class="h-12 w-auto" />
+          <div>
+            <h1 class="text-2xl font-bold">A2B Detailing</h1>
+            <p class="text-sm text-gray-300">Mobile car detailing in Louth & nearby areas</p>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- Booking Section -->
-    <main class="max-w-2xl mx-auto py-16 px-4 text-center">
-      <h2 class="text-2xl font-semibold mb-4">Book Your Appointment</h2>
-      <p class="text-gray-600 mb-8">Select a detailing package that suits you – we’ll be in touch to confirm your slot.</p>
+      <!-- Booking -->
+      <main class="max-w-2xl mx-auto py-16 px-4 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Book Your Appointment</h2>
+        <p class="text-gray-600 mb-8">Select a detailing package that suits you – we’ll be in touch to confirm your slot.</p>
 
-      <div class="tidycal-embed" data-path="kieronboz"></div>
-      <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
-    </main>
+        <div class="tidycal-embed" data-path="kieronboz"></div>
+        <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+      </main>
 
-    <!-- Gallery Section -->
-    <section class="bg-gray-50 py-12">
-      <div class="max-w-5xl mx-auto px-4">
-        <h3 class="text-2xl font-semibold text-center mb-8">Our Work</h3>
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <img src="https://source.unsplash.com/400x300/?carwash,shine" class="rounded-lg shadow-md" alt="Clean Car 1">
-          <img src="https://source.unsplash.com/400x300/?car,interior,detailing" class="rounded-lg shadow-md" alt="Clean Car 2">
-          <img src="https://source.unsplash.com/400x300/?car,polish" class="rounded-lg shadow-md" alt="Clean Car 3">
+      <!-- Gallery -->
+      <section class="bg-gray-50 py-12">
+        <div class="max-w-5xl mx-auto px-4">
+          <h3 class="text-2xl font-semibold text-center mb-8">Our Work</h3>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <img src="https://source.unsplash.com/400x300/?carwash,shine" class="rounded-lg shadow-md" alt="Clean Car 1">
+            <img src="https://source.unsplash.com/400x300/?car,interior,detailing" class="rounded-lg shadow-md" alt="Clean Car 2">
+            <img src="https://source.unsplash.com/400x300/?car,polish" class="rounded-lg shadow-md" alt="Clean Car 3">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
-      &copy; 2025 A2B Detailing. All rights reserved.
-    </footer>
+      <!-- Footer -->
+      <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+        &copy; 2025 A2B Detailing. All rights reserved.
+      </footer>
 
+    </div>
   </body>
 </html>
